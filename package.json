@@ -1,0 +1,5 @@
+{
+ "name":"errsplain","version":"0.1.0","description":"Your terminal is yelling. Here is what it means.","type":"module","author":"anigmea","license":"MIT","engines":{"node":">=18"},
+ "exports":{".":{"types":"./dist/index.d.ts","import":"./dist/index.js"}},"bin":{"errsplain":"./dist/cli.js"},"files":["dist","README.md","LICENSE","CHANGELOG.md"],
+ "scripts":{"build":"tsc","test":"node --test test/*.test.mjs","prepublishOnly":"npm run build && npm test"},"devDependencies":{"typescript":"^5.5.0","@types/node":"^22.0.0"}
+}
